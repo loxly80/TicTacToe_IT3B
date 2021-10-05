@@ -28,16 +28,6 @@ namespace TicTacToe_IT3B.BackEnd
 
         public Hra()
         {
-
-            int[] test0 = new int[3] { 2, 4, 6 };
-
-            int[] test = new int[3];
-            test[0] = 2;
-            test[1] = 4;
-            test[2] = 6;
-
-
-
             Hrac1 = new Hrac(Pole.Stav.Kolecko);
             Hrac2 = new Hrac(Pole.Stav.Krizek);
             if (random.NextDouble() > 0.5)
