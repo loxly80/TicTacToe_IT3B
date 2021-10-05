@@ -40,6 +40,11 @@ namespace TicTacToe_IT3B
             {
                 tlacitka[i].Text = hra.Plocha[i].ToString();
             }
+            var vyherce = hra.JeVitez();
+            if(vyherce != Pole.Stav.Prazdny)
+            {
+                MessageBox.Show($"Vyhral {vyherce}");
+            }
         }
 
         private void b1_Click(object sender, EventArgs e)
